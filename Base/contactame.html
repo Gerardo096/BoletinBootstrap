@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contactame</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row  bg-light border-5 align-items-center ">
+
+            <div class="p-4 mb-2  display-6 ">
+                <h2>Contactame</h2>
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+
+                <div class="col-12  ">
+                    <label for="nombre" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" required>
+                    <div class="valid-feedback">¡Campo valido!</div>
+                    <div class="invalid-feedback">¡Debe completar el campo!</div>
+                </div>
+
+                <div class="col-12 ">
+                    <label for="apellido" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="valid-feedback">¡Campo valido!</div>
+                    <div class="invalid-feedback">¡Debe completar el campo!</div>
+                </div>
+
+                <div class="col-12  justify-content-center">
+                    <label for="apellido" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" required>
+                    <div class="valid-feedback">¡Campo valido!</div>
+                    <div class="invalid-feedback">¡Debe completar el campo!</div>
+                </div>
+
+                <div class="col-12  justify-content-center">
+                    <label for="apellido" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="tlf" required>
+                    <div class="valid-feedback">¡Campo valido!</div>
+                    <div class="invalid-feedback">¡Debe completar el campo!</div>
+                </div>
+
+                <div class="col-12 ">
+                    <button class="btn btn-dark fw-bold" type="submit">Enviar</button>
+                    <button class="btn btn-dark fw-bold "><a style="text-decoration: none; color: white;" href="index.html">Volver</a></button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <script>
+        (function() {
+            'use strict'
+
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
